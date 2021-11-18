@@ -1,9 +1,0 @@
-FROM public.ecr.aws/lambda/nodejs:14
-
-RUN yum install -y wget
-RUN yum install -y tar
-RUN yum install -y xz
-
-RUN wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-RUN tar -xf ffmpeg-release-amd64-static.tar.xz
-RUN cp ffmpeg-4.4-amd64-static/ffmpeg /bin/ffmpeg
